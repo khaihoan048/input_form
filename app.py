@@ -24,7 +24,7 @@ def signup():
         cur.execute("insert into userinfo (email,token) VALUES ('%s','%s')"%(_email,_token))
         con.commit()
         cur.close()
-        return "Sucess!"
+        return "Success!"
 
     else:
         return "Fail!"
